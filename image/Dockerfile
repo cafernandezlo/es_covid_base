@@ -2,7 +2,7 @@
 FROM rocker/shiny-verse:latest
 
 # Librerias de uso general
-RUN apt-get update && apt-get install -y \
+RUN apt-get update && apt-get install -y --no-install-recommends \
 	sudo \
 	pandoc \
 	pandoc-citeproc \
@@ -18,7 +18,8 @@ RUN apt-get update && apt-get install -y \
 	libprotobuf-dev \
 	libudunits2-dev \
 	protobuf-compiler \
-	libgdal-dev
+	libgdal-dev \
+&& rm -rf /var/lib/apt/lists/*
 
 RUN echo "es_ES.UTF-8 UTF-8" >> /etc/locale.gen \
 && locale-gen \
