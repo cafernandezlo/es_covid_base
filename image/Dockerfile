@@ -21,19 +21,19 @@ RUN apt-get update && apt-get install -y \
 	libgdal-dev
 
 # Instalar paquetes de R necesarios 
-RUN R -e "install.packages('magrittr', repos='http://cran.us.r-project.org')"
-RUN R -e "install.packages('rvest', repos = 'http://cran.us.r-project.org')"
-RUN R -e "install.packages('readxl', repos = 'http://cran.us.r-project.org')"
-RUN R -e "install.packages('dplyr', repos = 'http://cran.us.r-project.org')"
-RUN R -e "install.packages('maps', repos = 'http://cran.us.r-project.org')"
-RUN R -e "install.packages('ggplot2', repos = 'http://cran.us.r-project.org')"
-RUN R -e "install.packages('reshape2', repos = 'http://cran.us.r-project.org')"
-RUN R -e "install.packages('ggiraph', repos = 'http://cran.us.r-project.org')"
-RUN R -e "install.packages('RColorBrewer', repos = 'http://cran.us.r-project.org')"
-RUN R -e "install.packages('leaflet', repos = 'http://cran.us.r-project.org')"
-RUN R -e "install.packages('plotly', repos='http://cran.us.r-project.org')"
-RUN R -e "install.packages('geojsonio', repos = 'http://cran.us.r-project.org')"
-RUN R -e "install.packages('shiny', repos='http://cran.us.r-project.org')"
-RUN R -e "install.packages('shinyWidgets', repos = 'http://cran.us.r-project.org')"
-RUN R -e "install.packages('shinydashboard', repos='http://cran.us.r-project.org')"
-RUN R -e "install.packages('shinythemes', repos = 'http://cran.us.r-project.org')"
+RUN R -e "install.packages('magrittr', repos='http://cran.us.r-project.org')" \
+&& R -e "install.packages('rvest', repos = 'http://cran.us.r-project.org')" \
+&& R -e "install.packages('readxl', repos = 'http://cran.us.r-project.org')" \
+&& R -e "install.packages('dplyr', repos = 'http://cran.us.r-project.org')" \
+&& R -e "install.packages('maps', repos = 'http://cran.us.r-project.org')" \
+&& R -e "install.packages('ggplot2', repos = 'http://cran.us.r-project.org')" \
+&& R -e "install.packages('reshape2', repos = 'http://cran.us.r-project.org')" \
+&& R -e "install.packages('ggiraph', repos = 'http://cran.us.r-project.org')" \
+&& R -e "install.packages('RColorBrewer', repos = 'http://cran.us.r-project.org')" \
+&& R -e "install.packages('leaflet', repos = 'http://cran.us.r-project.org')" \
+&& R -e "install.packages('plotly', repos='http://cran.us.r-project.org')" \
+&& R -e "install.packages('geojsonio', repos = 'http://cran.us.r-project.org')" \
+&& R -e "install.packages('shiny', repos='http://cran.us.r-project.org')" \
+&& R -e "install.packages('shinyWidgets', repos = 'http://cran.us.r-project.org')" \
+&& R -e "install.packages('shinydashboard', repos='http://cran.us.r-project.org')" \
+&& R -e "install.packages('shinythemes', repos = 'http://cran.us.r-project.org')"
