@@ -20,6 +20,10 @@ RUN apt-get update && apt-get install -y \
 	protobuf-compiler \
 	libgdal-dev
 
+RUN echo "es_ES.UTF-8 UTF-8" >> /etc/locale.gen \
+&& locale-gen \
+&& export LC_ALL="es_ES.UTF-8" 
+
 # Instalar paquetes de R necesarios 
 RUN R -e "install.packages('magrittr', repos='http://cran.us.r-project.org')" \
 && R -e "install.packages('rvest', repos = 'http://cran.us.r-project.org')" \
