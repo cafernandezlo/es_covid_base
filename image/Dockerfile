@@ -1,5 +1,7 @@
+# syntax = docker/dockerfile:experimental
+
 # Descargar imagen de shiny con tidyverse
-FROM rocker/shiny-verse:latest
+FROM rocker/shiny-verse:3.6.1
 
 # Librerias de uso general
 RUN apt-get update && apt-get install -y --no-install-recommends \
@@ -42,3 +44,14 @@ RUN R -e "install.packages('magrittr', repos='http://cran.us.r-project.org')" \
 && R -e "install.packages('shinyWidgets', repos = 'http://cran.us.r-project.org')" \
 && R -e "install.packages('shinydashboard', repos='http://cran.us.r-project.org')" \
 && R -e "install.packages('shinythemes', repos = 'http://cran.us.r-project.org')"
+
+# Version 1.1.0
+RUN apt-get update && apt-get install -y --no-install-recommends \
+	libsodium-dev \
+&& rm -rf /var/lib/apt/lists/*
+
+RUN R -e "install.packages('shinyjs', repos = 'http://cran.us.r-project.org')" \
+&& R -e "install.packages('glue', repos = 'http://cran.us.r-project.org')" \
+&& R -e "install.packages('remotes', repos = 'http://cran.us.r-project.org')" \
+&& R -e "remotes::install_github('cafernandezlo/shinyauthr')"
+

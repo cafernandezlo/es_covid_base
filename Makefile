@@ -1,5 +1,5 @@
-NAME = cafernandezlo/es_covid
-VERSION = shiny-verse
+NAME = cafernandezlo/shiny_verse_base
+VERSION = 1.1.0
 
 .PHONY: build build-nocache tag-latest push push-latest release git-tag-version
 
