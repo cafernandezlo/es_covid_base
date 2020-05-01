@@ -55,3 +55,5 @@ RUN R -e "install.packages('shinyjs', repos = 'http://cran.us.r-project.org')" \
 && R -e "install.packages('remotes', repos = 'http://cran.us.r-project.org')" \
 && R -e "remotes::install_github('cafernandezlo/shinyauthr')"
 
+# Version 1.1.1
+RUN R -e "install.packages('tidyr',repos='http://cran.us.r-project.org')"
