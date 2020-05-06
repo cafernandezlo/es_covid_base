@@ -11,7 +11,7 @@ A docker image to be used on COVID-19-Spain shiny project. [url](https://covid19
 - [cafernandezlo/es_covid_base](#cafernandezloes_covid_base)
 	- [Contributing](#contributing)
 	- [Quick Start](#quick-start)
-        - [Description](#Description)
+        - [Description](#description)
 
 ## Contributing
 If you find this image useful here's how you can help:
