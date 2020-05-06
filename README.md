@@ -1,6 +1,6 @@
 # es_covid_base
 
-A docker image to be used on COVID-19-Spain shiny project. [url](https://covid19.tic.udc.es)
+A docker image to be used on COVID-19-Spain shiny project. [url](https://covid19.citic.udc.es)
 
 
 ![Docker Pulls](https://img.shields.io/docker/pulls/cafernandezlo/es_covid_base.svg)
