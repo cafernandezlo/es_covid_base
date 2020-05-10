@@ -1,5 +1,5 @@
 NAME = cafernandezlo/shiny_verse_base
-VERSION = 1.1.1
+VERSION = 1.1.2
 
 .PHONY: build build-nocache tag-latest push push-latest release git-tag-version
 

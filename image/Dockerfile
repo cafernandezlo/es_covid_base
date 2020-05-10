@@ -57,3 +57,6 @@ RUN R -e "install.packages('shinyjs', repos = 'http://cran.us.r-project.org')" \
 
 # Version 1.1.1
 RUN R -e "install.packages('tidyr',repos='http://cran.us.r-project.org')"
+
+#Version 1.1.2
+RUN R -e "install.packages('tidyselect',repos='http://cran.us.r-project.org')"
