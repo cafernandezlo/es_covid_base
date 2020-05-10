@@ -28,5 +28,5 @@ Run docker image:
 ## Description
 
 - [rocker/shiny-verse:3.6.1](https://hub.docker.com/r/rocker/shiny-verse) R, shiny image 
-- R libraries: magrittr, rvest, readxl, dplyr, maps, ggplot2, reshape2, ggiraph, RColorBrewer, leaflet, plotly, geojsonio, shiny, shinyWidgets, shinydashboard, shinythemes, shinyjs, glue, remotes, shinyauthr, tidyr
+- R libraries: magrittr, rvest, readxl, dplyr, maps, ggplot2, reshape2, ggiraph, RColorBrewer, leaflet, plotly, geojsonio, shiny, shinyWidgets, shinydashboard, shinythemes, shinyjs, glue, remotes, shinyauthr, tidyr, tidyselect
 - System libraries: sudo, pandoc, pandoc-citeproc, libcurl14-gnutls-dev, libcairo2-dev, libxt-dev, libssl-de, libssh2-1-dev, libfontconfig1-dev, libcairo2-dev, libjq-dev, libv8-dev, libprotobuf-dev, libudunits2-dev, protobuf-compiler, libgdal-dev, libsodium-dev
